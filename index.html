@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="reset" href="reset.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Wallpoet&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="jumbotron">
+            <h1 class="display-4">Crystal Collector!</h1>
+                <hr class="my-4">
+                <p>You will be given a random number at the start of the game, There are four crystals below.</p>
+                <p>By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game your total score goes about the raondomw number.</p>
+                <p>The value of each crystals is hidden from you until click on it.</p>
+                <p>Each tiime when the games starts, the game will change the values of each crystal.</p>
+    </div>
+ 
+<div class="div">
+<h2 id="guesstargetnumber"> 65</h2>
+<h3 id="wins">wins: </h3>
+<h3 id="losses"> losses: </h3>
+</div>
+
+<div class="container">
+    <div class="Crystal1"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Amethystemadagascar2.jpg" data-crystalvalue= "20"></div>
+    <div class="Crystal2"><img src="https://www.thoughtco.com/thmb/ckqG-k4zEAHB3OrOyw61acYuieg=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/close-up-of-crystal-stone-glowing-in-darkroom-583919173-56f28e5d3df78ce5f83d7284.jpg" data-crystalvalue= "15"></div>
+    <div class="Crystal3"><img src="http://solawakening.com/wp-content/uploads/2011/12/fantasy-crystal-field.jpg" data-crystalvalue= "10"></div>
+    <div class="Crystal4"> <img src="http://www.hotel-r.net/im/hotel/gr/crystal-8.jpg" data-crystalvalue= "5"></div>
+</div>
+
+<h4 id="totalscore"> Total Score: </h4>
+
+</body>
+</html>

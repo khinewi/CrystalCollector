@@ -1,0 +1,47 @@
+
+body {
+
+    background: black;
+    font-family: 'Wallpoet', cursive;
+}
+
+.jumbotron {
+
+border: solid blanchedalmond;
+background: blanchedalmond;
+width: 50%;
+margin-bottom: 20px;
+
+} 
+
+h2 {
+
+    color: white;
+    font-size: 50px;
+
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container {
+
+    display: inline-flex;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+h4 {
+
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
