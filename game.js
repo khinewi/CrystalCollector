@@ -5,17 +5,20 @@ $(document).ready(function(){
 var wins = 0;
 var losses = 0;
 var totalscore = 0;
+var Crystal1 = Math.floor((Math.random() * 12) + 1);
+var Crystal2 = Math.floor((Math.random() * 12) + 1);
+var Crystal3 = Math.floor((Math.random() * 12) + 1);
+var Crystal4 = Math.floor((Math.random() * 12) + 1);
 
 // var winsdiv = $("#wins");
 // var lossesdiv = $("#losses");
 // var totalscore = $("#totalscore");
 
 
-var randomnumber = Math.floor((Math.random() * 100) + 19);
+var randomnumber = Math.floor((Math.random() * 119) + 19);
 $("#guesstargetnumber").text(randomnumber);
 
     $('#Crystal1').click(function(){
-        var Crystal1 = Math.floor((Math.random() * 12) + 1);
         totalscore = totalscore + Crystal1;
         $("#totalscore").text("totalscores: " + totalscore);
         if (totalscore === randomnumber) { winscalc();
@@ -25,7 +28,6 @@ $("#guesstargetnumber").text(randomnumber);
         console.log (crystal1)
     });
     $('#Crystal2').click(function(){
-        var Crystal2 = Math.floor((Math.random() * 12) + 1);
         totalscore = totalscore + Crystal2;
         $("#totalscore").text("totalscores: " + totalscore);
         if (totalscore === randomnumber) { winscalc();
@@ -36,7 +38,6 @@ $("#guesstargetnumber").text(randomnumber);
 
     });
     $('#Crystal3').click(function(){
-        var Crystal3 = Math.floor((Math.random() * 12) + 1);
         totalscore = totalscore + Crystal3;
         $("#totalscore").text("totalscores: " + totalscore);
         if (totalscore === randomnumber) { winscalc();
@@ -48,7 +49,6 @@ $("#guesstargetnumber").text(randomnumber);
 
     });
     $('#Crystal4').click(function(){
-        var Crystal4 = Math.floor((Math.random() * 12) + 1);
         totalscore = totalscore + Crystal4;
         $("#totalscore").text("totalscores: " + totalscore);
         if (totalscore === randomnumber) { winscalc();
@@ -64,7 +64,7 @@ function winscalc(){
 
     wins++;
     $("#wins").text("wins: " + wins);
-    reset ()
+    reset()
 
 }
 
@@ -72,7 +72,7 @@ function lossescalc(){
 
     losses++;
     $("#losses").text("losses: " + losses);
-    reset ()
+    reset()
 }
 
 function reset(){
@@ -81,7 +81,10 @@ function reset(){
     randomnumber = Math.floor((Math.random() * 100) + 19);
     $("#guesstargetnumber").text(randomnumber);
     $("#totalscore").text("totalscores: " + totalscore);
-
+    Crystal1 = Math.floor((Math.random() * 12) + 1);
+    Crystal2 = Math.floor((Math.random() * 12) + 1);
+    Crystal3 = Math.floor((Math.random() * 12) + 1);
+    Crystal4 = Math.floor((Math.random() * 12) + 1);
 
 }
 
